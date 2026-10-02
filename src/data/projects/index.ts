@@ -1,4 +1,5 @@
 import { Project } from "@/types/project";
+import { odinCardGame } from "./odin-card-game";
 
 // هر پروژه در یک فایل جدا تعریف می‌شه، مثلاً:
 // import { enterpriseCommerce } from "./enterprise-commerce";
@@ -9,6 +10,7 @@ import { clinicBookingSaas } from "./clinic-booking-saas";
 
 export const projects: Project[] = [
 clinicBookingSaas,
+odinCardGame,
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
