@@ -5,7 +5,7 @@ export const clinicBookingSaas: Project = {
   name: "Clinic Booking SaaS",
   oneLiner:
     "A multi-tenant appointment booking platform for clinics and service businesses.",
-  category: "Full-Stack",
+  categories: ["Full-Stack", "Backend"],
   tags: ["ASP.NET Core", "PostgreSQL", "Next.js", "Multi-tenant", "Hangfire"],
   status: "Deployed",
   featured: true,

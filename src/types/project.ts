@@ -55,7 +55,7 @@ export interface Project {
   slug: string; // مثلاً "clinic-booking"
   name: string;
   oneLiner: string;
-  category: ProjectCategory;
+  categories: ProjectCategory[]; 
   tags: string[]; // برای Filter صفحهٔ Projects
   status: ProjectStatus;
   featured: boolean; // آیا در Home نمایش داده بشه

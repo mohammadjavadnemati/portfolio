@@ -13,12 +13,13 @@ export const metadata: Metadata = {
     "Real, production-oriented projects across backend, full-stack, and machine learning.",
 };
 
-export default function ProjectsPage({
+export default async function ProjectsPage({
   searchParams,
 }: {
-  searchParams: { category?: string };
+  searchParams: Promise<{ category?: string }>;
 }) {
-  const category = (searchParams.category ?? "All") as ProjectCategory | "All";
+  const { category: categoryParam } = await searchParams;
+  const category = (categoryParam ?? "All") as ProjectCategory | "All";
   const projects = getProjectsByCategory(category);
 
   return (

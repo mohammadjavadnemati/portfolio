@@ -18,9 +18,14 @@ export function ProjectHero({ project }: { project: Project }) {
     <header className="border-b border-border pb-10">
       <div className="flex flex-wrap items-center gap-3">
         <StatusBadge status={project.status} />
-        <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted">
-          {project.category}
-        </span>
+{project.categories.map((category) => (
+  <span
+    key={category}
+    className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted"
+  >
+    {category}
+  </span>
+))}
       </div>
 
       <h1 className="mt-4 font-display text-3xl font-bold tracking-tight sm:text-4xl">

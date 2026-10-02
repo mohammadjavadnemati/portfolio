@@ -25,5 +25,5 @@ export function getAllSlugs(): string[] {
 
 export function getProjectsByCategory(category: string): Project[] {
   if (category === "All") return projects;
-  return projects.filter((p) => p.category === category);
+  return projects.filter((p) => p.categories.includes(category as Project["categories"][number]));
 }
