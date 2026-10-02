@@ -5,12 +5,10 @@ import { Project } from "@/types/project";
 // import { teamflow } from "./teamflow";
 // import { clinicBooking } from "./clinic-booking";
 // import { momentum } from "./momentum";
+import { clinicBookingSaas } from "./clinic-booking-saas";
 
 export const projects: Project[] = [
-  // enterpriseCommerce,
-  // teamflow,
-  // clinicBooking,
-  // momentum,
+clinicBookingSaas,
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
