@@ -7,10 +7,12 @@ import { odinCardGame } from "./odin-card-game";
 // import { clinicBooking } from "./clinic-booking";
 // import { momentum } from "./momentum";
 import { clinicBookingSaas } from "./clinic-booking-saas";
+import { teamflow } from "./teamflow";
 
 export const projects: Project[] = [
 clinicBookingSaas,
 odinCardGame,
+teamflow,
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
