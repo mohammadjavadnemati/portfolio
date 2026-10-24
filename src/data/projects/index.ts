@@ -9,12 +9,14 @@ import { odinCardGame } from "./odin-card-game";
 import { clinicBookingSaas } from "./clinic-booking-saas";
 import { teamflow } from "./teamflow";
 import { smartsave } from "./smartsave";
+import { momentum } from "./momentum";
 
 export const projects: Project[] = [
 clinicBookingSaas,
 odinCardGame,
 teamflow,
 smartsave,
+momentum,
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
