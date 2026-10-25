@@ -11,6 +11,7 @@ import { teamflow } from "./teamflow";
 import { smartsave } from "./smartsave";
 import { momentum } from "./momentum";
 import { silverGame } from "./silver-game";
+import { silverBullet } from "./silver-bullet";
 
 export const projects: Project[] = [
 clinicBookingSaas,
@@ -19,6 +20,7 @@ teamflow,
 smartsave,
 momentum,
 silverGame,
+silverBullet,
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
